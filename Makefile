@@ -18,8 +18,3 @@ sync:
 .PHONY: ssh
 ssh:
 	vagrant ssh
-
-.PHONY: reset-full
-reset-full:
-	vagrant destroy
-	vagrant up

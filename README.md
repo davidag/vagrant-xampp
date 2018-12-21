@@ -1,5 +1,6 @@
 ## Features
-* Debian stretch x64
+* libvirt-based vagrant file
+* Vagrant box: Debian stretch x64
 * XAMPP 7.3.0
 * Access web site (from host): `http://localhost:8000`
 * Access phpMyAdmin (from host): `http://localhost:8000/phpmyadmin`
@@ -20,7 +21,4 @@ $ make sync
 
 # SSH into development machine
 $ make ssh
-
-# Destroy machine and re-create from scratch
-$ make reset-full
 ```
