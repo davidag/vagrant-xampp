@@ -1,11 +1,26 @@
+## Features
+* Debian stretch x64
+* XAMPP 7.3.0
+* Access web site (from host): `http://localhost:8000`
+* Access phpMyAdmin (from host): `http://localhost:8000/phpmyadmin`
+
 ## Howto
 ```
-# Start development for the first time
-$ vagrant up
+# Start development machine
+$ make start
 
-# Reset development environment
-$ vagrant provision
+# Stop development machine
+$ make stop
 
-# Use git sub-module as website source files
+# Restart development machine
+$ make restart
 
+# Synchronize host web to development machine
+$ make sync
+
+# SSH into development machine
+$ make ssh
+
+# Destroy machine and re-create from scratch
+$ make reset-full
 ```
